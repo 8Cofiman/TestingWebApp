@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: radial-gradient(circle closest-corner at 15% 30%, #bd2191, #141E30);
+}
+
+p, h1, h2, h3, h4 {
+    color: #ffffff;
+}
+
+input, textarea {border: 0; outline: 0;}
+
+.flex {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    text-align: center;
+    height: 12vh;
+    position: relative;
+}
+
+.header_title {
+    padding-top: 1%;
+    margin-left: 3%;
+    color: #FFB347;
+    font-weight: 900;
+    width: 50%;
+    font-size: 2.3vw;
+    border-right: 0px solid #262626;
+    text-align:left ;
+}
+
+.header_data {
+    width: 50%;
+    display: flex;
+}
+.header_data div {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding: 0;
+}
+
+.header_address, .header_tel {
+    top: 25%;
+    text-align: right;
+    right: 5%;
+    font-size: 1.1vw;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header_address:hover, .header_tel:hover {
+    color: #FFB347;
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+.slider_section {
+    position: relative;
+}
+
+.slider {
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5vw;
+    /* width: 100%; */
+    max-width: 90%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.slider-line {
+    width: 1024px;
+    height:74.8vh;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.slider_item {
+    width: 1280px;
+    height: auto;
+    display: flex;
+}
+
+.slider_item_ques, .slider_item_answ {
+    height: 100%;
+    width: 100%;
+}
+
+.slider_item_ques {
+    padding: 4vw;
+    text-align: left;
+    border-right: 0px solid black;
+}
+
+.slider_item_ques img {
+    margin-top: 0vw;
+    max-width: 20vw;
+    width: 20vw;
+}
+
+.slider_item_ques p {
+    color: #fff;
+    font-weight: 100;
+    font-size: 1.3vw;
+    line-height: 1.7;
+}
+
+.slider_item_ques h2 span {
+    font-style: italic;
+    font-weight: 900;
+    color: #FDA085;
+}
+
+.slider_item_answ {
+    padding: 4vw;
+    text-align: left;
+}
+
+.slider_item_answ h2, .slider_item_ques h2 {
+    font-size: 1vw;
+    margin-bottom: 5%;
+    line-height: 1.5;
+    max-width: 85%;
+}
+
+.slider_item_answ form {
+    font-size: 1.1vw;
+}
+
+.bob{
+    padding-bottom: 2%;
+    line-height: 125%;
+    font-size: 1vw;
+    max-width: 85%;
+}
+
+.bob input {
+    padding: 0;
+    margin: 0;
+    width: 1vw;
+    height: 1vw;
+    border: none;
+    outline: none;
+}
+
+.bobi{
+    padding-bottom: 15px;
+}
+
+#quest7_text, #quest8_text, #quest11_text  {
+    width: 30vw;
+    height: 3vh;
+    font-size: 1.5vw;
+    color: #fff;
+    padding-bottom: 1%;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 0.5px solid #fff;
+}
+
+#quest11_text {
+    min-width: 20vw;
+    max-width: 30vw;
+    min-height: 3vw;
+    max-height: 20vw;
+}
+
+#quest9_text {
+    width: 18vw;
+    height: 3vw;
+    font-size: 2.2vw;
+    color: #fff;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 0.5px solid #fff;
+}
+
+#quest7_text:active, #quest7_text:focus, #quest8_text:active, #quest8_text:focus, 
+#quest9_text:active, #quest9_text:focus, #quest11_text:active, #quest11_text:focus {
+    border-bottom: 1px solid #F6D365;
+}
+
+.btnPrev, .btnNext {
+    cursor: pointer;
+    position: absolute;
+    background: none;
+    border: 0.5px solid #fff;
+    border-radius: 5vw;
+    width: 6%;
+    margin-left: 13vw;
+    margin-right: 13vw;
+    padding: 1% 1% 1% 1%;
+    text-align: center;
+    font-size: 1.1vw;
+    color: #fff;
+}
+
+.btnPrev {
+    display: none;
+    bottom: 3vw;
+    left: 2vw;
+}
+
+.btnNext {
+    bottom: 3vw;
+    right: 2vw;
+}
+
+.btnPrev:hover, .btnNext:hover {
+    background: linear-gradient(#F6D365, #FDA085);
+    transition: 0.35s;
+}
+
+.btnPrev:active, .btnNext:active {
+    background: #FFB347;
+    color: #fff;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 13vh;
+}
+
+.footer_text {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    font-size: 1.1vw;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: #FFB347;
+    cursor: pointer;
+}
+
+#textres {
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+#result {
+    color: #FFB347;
+    font-size: 1.5vw;
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#resultText {
+    color: #fff;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 1.4vw;
+    width: 60%;
+}
+
+
+
+table.iksweb {
+    margin-top: 5%;
+    text-decoration: none;
+    border-collapse: collapse;
+    width: 50vh;
+    height: 50vh;
+    text-align: center;
+}
+
+table.iksweb th {
+    font-weight: bold;
+    font-size: 1.8vh;
+    color: #ffffff;
+    background-color: #FDA085;
+}
+
+table.iksweb td {
+    font-size: 1.8vh;
+    color: #ffffff;
+}
+
+table.iksweb td,
+table.iksweb th {
+    white-space: pre-wrap;
+    line-height: 3vh;
+    vertical-align: middle;
+    border: 1px solid #354251;
+}
+
+table.iksweb tr:hover {
+    background-color: #f9fafb
+}
+
+table.iksweb tr:hover td {
+    color: #354251;
+    cursor: default;
+}
+
+
+
+
+@media (max-width: 765px) {
+    .header_address, .header_tel {
+        font-size: 1.1vh;
+    }
+    .slider_item { 
+        flex-direction: column;
+    }
+    .slider_item_answ {
+        height: auto;
+    }
+    .slider_item_ques {
+        height: auto;
+    }
+    .slider_item_answ h2, .slider_item_ques h2 {
+        font-size: 1.5vh;
+    }
+    .slider_item_ques p {
+        font-size: 1.3vh;
+    }
+    .slider_item_ques img {
+        width: 35vh;
+        max-width: 35vh;
+    }
+    form .bob {
+        font-size: 1.3vh;
+    }
+    .bob input {
+        width: 1vh;
+        height: 1vh;
+    }
+    #quest7_text, #quest8_text, #quest11_text {
+        width: 80%;
+        font-size: 1.5vh;
+    }
+    #textres {
+        margin-top: 5%;
+        margin-left: 5%;
+        font-size: 1.3vh;
+    }
+    #result {
+        font-size: 1.1vh;
+        max-width: 85%;
+    }
+    #resultText {
+        font-size: 1.1vh;
+        max-width: 85%;
+    }
+    .btnPrev, .btnNext {
+        width: 16%;
+        margin-left: 13vh;
+        margin-right: 13vh;
+        padding: 1% 1% 1% 1%;
+        font-size: 1.1vh;
+    }
+    .footer_text {
+        font-size: 1.1vh;
+        width: auto;
+    }
+    #quest11_text {
+        min-width: 40vw;
+        max-width: 60vw;
+        min-height: 3vw;
+        max-height: 40vw;
+    }
+    table.iksweb {
+        margin-left: 5%;
+        width: 30vh;
+    }
+    table.iksweb td, table.iksweb th {
+    padding: 3px 2px;
+    line-height: 0.8vh;
+    font-size: 1.3vh;
+}
+}
